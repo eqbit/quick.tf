@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^details/([^/\.]+)/?$ details.php/?hat=$1 [L]
+RewriteRule ^hat/([^/\.]+)/?$ hat.php/?hat=$1 [L]
+RewriteRule ^trade/([^/\.]+)/?$ trade.php?id=$1 [L]
+RewriteRule ^trades/page/([^/\.]+)/?$ trades.php/?page=$1 [L]
+RewriteRule ^profile/([^/\.]+)/?$ profile.php/?id=$1 [L]
+RewriteRule ^inventory/([^/\.]+)/?$ inventory.php/?id=$1 [L]
+RewriteRule ^mytrades/([^/\.]+)/?$ mytrades.php/?id=$1 [L]
+RewriteRule ^qsearch/([^/\.]+)/?$ qsearch.php/?request=$1 [L]
+RewriteRule ^search/([^/\.]+)/?$ search.php/?request=$1 [L]
+RewriteRule ^effect/([^/\.]+)/?$ effect.php/?eff=$1 [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+

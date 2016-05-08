@@ -1,0 +1,1183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="http://quick.test/style.css" />
+<link href="http://quick.test/content/img/ico.png" rel="shortcut icon" type="image/x-icon" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<title>Evil's profile. quick.test</title></head>
+<body>
+
+
+
+<div id="wrapper">
+<div id="header">
+<a href="http://quick.test"><div class="menu"><img src="http://quick.test/content/img/logo.png"></div></a>
+<a href="http://quick.test/qb"><div class="menu-link">QB</div></a>
+<a href="http://quick.test/trades"><div class="menu-link">Listings</div></a>
+<div class="menu" style="float: right;"><form method="get" id="bpform" ><input type="text" name="search" id="searchbox" placeholder="Search..." style="background-color: white;" /></form></div>    
+<div class="menu" style="padding: 0; float: right;"><a href="http://quick.test/profile/76561198042938501"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/51/5121569883b28657bf7eb7c460cbe87858d2216d.jpg" title="Evil [⇄] Quick.tf" style="margin-top:2px; border:2px solid #38c300; border-radius:2px;"></a></div>
+<div class="dropdown">
+
+    <a href="http://quick.test/profile/76561198042938501">
+         <div class="menu-link" style="min-width: 75px;">
+             Profile
+         </div>
+	</a>
+	
+	<div class="dropdown-content">
+        <a href="http://quick.test/inventory/76561198042938501">
+		 <div class="drop-menu-link" style="clear: left; min-width: 75px;">Inventory</div>
+		</a>
+        <a href="http://quick.test/mytrades/76561198042938501">
+		 <div class="drop-menu-link" style="clear: left; min-width: 75px;">My listings</div>
+		</a>
+    </div>
+	
+</div><a href="http://quick.test/adminpanel.php"><div class="menu-link">Control Panel</div></a>
+</div>
+<div id="content">
+
+
+
+<script>
+$("#bpform").on("submit", function(event){     
+
+    // prevent form from being submitted
+    event.preventDefault();
+
+    // get value of text box using .val()
+    var name = $("#searchbox").val();
+	var str = 'steamcommunity.com';
+	//var temp = name.split("/").filter(function(el){ return !!el; }).pop();
+
+	if(name != '' && name.length > '2')
+	{
+		if(name.indexOf(str) != -1)
+		{
+			window.open("http://quick.test/qsearch.php/?request=" + name, "_blank");
+		}
+		else
+		{
+            window.open("http://quick.test/qsearch.php/?request=" + name, "_self");
+		}
+	    $("#searchbox").val("");
+	}
+});
+</script>
+
+
+
+
+<div class="maindiv_container" style="margin-top: 0px;">
+
+<div class="maindiv_header">
+    <H1>Evil - profile</H1>
+</div>
+
+<div class="umaindiv">
+<div class="fullscreen" id="overall" style="display:none;">
+    <div class="fullscreen-text" id="overall-text"></div>
+</div>
+
+
+	    <div style="display: inline-block; float: left">
+		    <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5f/5f1c1d5b6011dd2a20d3800ca6ccf2c6b5510eb4_full.jpg" style="border: 1px solid #02b43b; border-radius:5px; float:left; margin-bottom:20px;">
+		    <div style="float: left">
+			    <p class="profile" style="margin-top: 20px; margin-left:10px; clear: none; width: 203px; color: green">Steamrep: <span style="float: right">OK</span></p>
+				<p class="profile" style="color: green;margin-top: 30px; margin-left:10px; clear:none; width: 203px;">Trade status: <span style="float: right">OK</span></p>
+				<p class="profile" style="color: green;margin-top: 30px; margin-left:10px; clear: none; width: 203px;">VAC: <span style="float: right">OK</span></p>
+			</div><div style="clear: both; margin-top:15px"><form action="/steamauth/logout.php" method="post"><input class="button" value="Logout" type="submit" /></form></div>
+	        <div class='comm_ico_cont'>
+	        <a href='http://steamcommunity.com/id/dealwithevil/' target='_blank'><div class='comm_ico'><img src='http://quick.test/content/img/steam_ico.png' /><span style='float: right; margin-top: 7px; margin-right: 5px;'>STEAM</span></div></a>
+	        <a href='http://backpack.tf/profiles/76561198042938501' target='_blank'><div class='comm_ico'><img src='http://quick.test/content/img/bptf_ico.png' /><span style='float: right; margin-top: 7px; margin-right: 5px;'>BPTF</span></div></a>
+	        <a href='http://www.tf2outpost.com/user/76561198042938501' target='_blank'><div class='comm_ico'><img src='http://quick.test/content/img/tf2op_ico.png' /><span style='float: right; margin-top: 7px; margin-right: 5px;'>TF2OP</span></div></a>
+	        <a href='http://steamrep.com/profiles/76561198042938501' target='_blank'><div class='comm_ico'><img src='http://quick.test/content/img/steamrep_ico.png' /><span style='float: right; margin-top: 7px; margin-right: 5px;'>SR</span></div></a>
+	        </div>
+		</div>
+		
+	
+	
+	    <div style='display: inline-block; float: right;'>
+	
+	        <p class='profile'>Status:<span style='color:#02b43b'> online</span></p>
+	        <p class='profile'>Steam user since: 1970 01 01</p>
+	        <p class='profile'>Unusuals: 137</p>
+	        <p class='profile'>Keys: 1219</p>
+	        <p class='profile'>Open listings: </p>
+	        <p class='profile'>Total listings: 64</p><div style='width:410px;'><input id='trinp' style='float: left; width:366px; height: 23px;' placeholder='https://steamcommunity.com/tradeoffer/new/?partner=82672773&token=_M1MSnJd'><button class='ok' steamid='76561198042938501a' id='trbtn'>OK</button></div></div>
+	
+	<div class="separator" style="margin-top: 360px;"></div>
+	
+	
+						<div class="ubox" price="14" usedBy="Pyro" name=" Aces High Hive Minder" id="4558448758_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/59_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/jul13_bee_keeper.ff036660863328166e97c88e4625459460952dd1.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4558448758_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4558448758', '36')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4558448758', '36')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3591712447">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 12  keys">12</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 14 keys">14</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Aces High</p>
+								<p>Hive Minder</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4558448758')" id="4558448758_selldiv" >11 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4558448758_inputdiv" >
+				                    <input class="quicklist" id="4558448758_input" value="" placeholder="11" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4558448758')" id="4558448758_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="50" usedBy="Soldier" name=" Molten Mallard Killer's Kabuto" id="4560095962_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/88_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/soldier_samurai.5be25e13362284a07a5eedf28c31ae877d84fd4e.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4560095962_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4560095962', '44')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4560095962', '44')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3271965036">History</a></li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 50 keys">50</li>
+							        <li class="small" style="background:orange" title="Used by: Soldier">Soldier</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Molten Mallard</p>
+								<p>Killer's Kabuto</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4560095962')" id="4560095962_selldiv" >12 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4560095962_inputdiv" >
+				                    <input class="quicklist" id="4560095962_input" value="" placeholder="12" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4560095962')" id="4560095962_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="119" usedBy="Pyro" name=" Sunbeams Firewall Helmet" id="4540215480_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/17_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/robo_pyro_firewall_helmet.6e001f6f6169609c20ed612e85dc1918843e122f.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4540215480_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4540215480', '21')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4540215480', '21')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/2932778420">History</a></li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 119 keys">119</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Sunbeams</p>
+								<p>Firewall Helmet</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4540215480')" id="4540215480_selldiv" >14 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4540215480_inputdiv" >
+				                    <input class="quicklist" id="4540215480_input" value="" placeholder="14" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4540215480')" id="4540215480_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="53" usedBy="Engineer" name=" Green Energy Virtual Reality Headset" id="4533418896_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/9_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/fwk_engineer_cranial.3e625771983a94137ae1191df7714b62cb8164ef.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4533418896_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4533418896', '18')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4533418896', '18')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3688942859">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 57  keys">57</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 53 keys">53</li>
+							        <li class="small" style="background:orange" title="Used by: Engineer">Engineer</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Green Energy</p>
+								<p>Virtual Reality Headset</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4533418896')" id="4533418896_selldiv" >15 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4533418896_inputdiv" >
+				                    <input class="quicklist" id="4533418896_input" value="" placeholder="15" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4533418896')" id="4533418896_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="16" usedBy="Pyro" name=" Terror-Watt Respectless Robo-Glove" id="4681860463_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/57_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/robo_pyro_respectless_glove.efb0dff19d66b3e99a786fe2bdde01976e3739aa.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4681860463_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4681860463', '59')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4681860463', '59')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/2121899097">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 15  keys">15</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 16 keys">16</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Terror-Watt</p>
+								<p>Respectless Robo-Glove</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4681860463')" id="4681860463_selldiv" >15 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4681860463_inputdiv" >
+				                    <input class="quicklist" id="4681860463_input" value="" placeholder="15" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4681860463')" id="4681860463_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="14" usedBy="Pyro" name=" Smoking Burning Bandana" id="4678612761_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/35_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/jul13_hot_rag.0638975933f80eda3ca8dd3775652a15179f82b3.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4678612761_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4678612761', '60')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4678612761', '60')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1915219818">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 17  keys">17</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 14 keys">14</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Smoking</p>
+								<p>Burning Bandana</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4678612761')" id="4678612761_selldiv" >15 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4678612761_inputdiv" >
+				                    <input class="quicklist" id="4678612761_input" value="" placeholder="15" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4678612761')" id="4678612761_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="53" usedBy="Engineer" name=" Green Energy Virtual Reality Headset" id="4644755522_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/9_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/fwk_engineer_cranial.3e625771983a94137ae1191df7714b62cb8164ef.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4644755522_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4644755522', '53')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4644755522', '53')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/756176996">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 57  keys">57</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 53 keys">53</li>
+							        <li class="small" style="background:orange" title="Used by: Engineer">Engineer</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Green Energy</p>
+								<p>Virtual Reality Headset</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4644755522')" id="4644755522_selldiv" >15 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4644755522_inputdiv" >
+				                    <input class="quicklist" id="4644755522_input" value="" placeholder="15" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4644755522')" id="4644755522_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="77" usedBy="Soldier" name=" Death at Dusk Caribbean Conqueror" id="4629125164_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/90_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/jul13_the_caribbean_conqueror.07b18143718b7adf1ef770a26c086dc31f782bf9.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4629125164_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4629125164', '56')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4629125164', '56')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3387035643">History</a></li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 77 keys">77</li>
+							        <li class="small" style="background:orange" title="Used by: Soldier">Soldier</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Death at Dusk</p>
+								<p>Caribbean Conqueror</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4629125164')" id="4629125164_selldiv" >15 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4629125164_inputdiv" >
+				                    <input class="quicklist" id="4629125164_input" value="" placeholder="15" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4629125164')" id="4629125164_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="62" usedBy="Demoman" name=" Morning Glory Pirate Bandana" id="4635808709_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/89_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/fall2013_pirate_bandana.0e8436e83807af59239cc84ab314bd53497803a8.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4635808709_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4635808709', '55')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4635808709', '55')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3360960496">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 61  keys">61</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 62 keys">62</li>
+							        <li class="small" style="background:orange" title="Used by: Demoman">Demoman</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Morning Glory</p>
+								<p>Pirate Bandana</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4635808709')" id="4635808709_selldiv" >20 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4635808709_inputdiv" >
+				                    <input class="quicklist" id="4635808709_input" value="" placeholder="20" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4635808709')" id="4635808709_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="35" usedBy="Pyro" name=" Miami Nights Sole Mate" id="4677617181_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/61_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/sbox2014_sole_mate.5d6f417c9807caca552b2d523c0523bf98471af1.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4677617181_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4677617181', '61')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4677617181', '61')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3344796320">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 29  keys">29</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 35 keys">35</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Miami Nights</p>
+								<p>Sole Mate</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4677617181')" id="4677617181_selldiv" >20 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4677617181_inputdiv" >
+				                    <input class="quicklist" id="4677617181_input" value="" placeholder="20" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4677617181')" id="4677617181_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="23" usedBy="Pyro" name=" Phosphorous Madame Dixie" id="4639591099_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/63_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/pyro_madame_dixie.0926c7c97e6a6db8dbdd623f47fbbfde87b96d20.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4639591099_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4639591099', '54')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4639591099', '54')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1654562038">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 26  keys">26</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 23 keys">23</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Phosphorous</p>
+								<p>Madame Dixie</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4639591099')" id="4639591099_selldiv" >20 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4639591099_inputdiv" >
+				                    <input class="quicklist" id="4639591099_input" value="" placeholder="20" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4639591099')" id="4639591099_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="58" usedBy="Multi" name=" Nuts n' Bolts Executioner" id="4668259085_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/31_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/executionerhood_medic.20ad21d171cb0b3d8491e5ab52844e4a5a189d29.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4668259085_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4668259085', '49')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4668259085', '49')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1761199684">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 31  keys">31</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 58 keys">58</li>
+							        <li class="small" style="background:orange" title="Used by: Multi">Multi</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Nuts n' Bolts</p>
+								<p>Executioner</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4668259085')" id="4668259085_selldiv" >20 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4668259085_inputdiv" >
+				                    <input class="quicklist" id="4668259085_input" value="" placeholder="20" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4668259085')" id="4668259085_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="58" usedBy="Spy" name=" Cauldron Bubbles Charmer's Chapeau" id="4546334693_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/39_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/spy_charmers_chapeau.5591bb51e50c780c92044ba717fdadff2abf2172.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4546334693_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4546334693', '27')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4546334693', '27')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/551076141">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 62  keys">62</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 58 keys">58</li>
+							        <li class="small" style="background:orange" title="Used by: Spy">Spy</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Cauldron Bubbles</p>
+								<p>Charmer's Chapeau</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4546334693')" id="4546334693_selldiv" >23 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4546334693_inputdiv" >
+				                    <input class="quicklist" id="4546334693_input" value="" placeholder="23" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4546334693')" id="4546334693_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="31" usedBy="Demoman" name=" Miami Nights Samur-Eye" id="4670510278_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/61_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/demo_shogun_kabuto.9a05511d3a829d03b7b316c920d77e1fc2644ac2.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4670510278_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4670510278', '62')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4670510278', '62')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/2229230967">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 31  keys">31</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 31 keys">31</li>
+							        <li class="small" style="background:orange" title="Used by: Demoman">Demoman</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Miami Nights</p>
+								<p>Samur-Eye</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4670510278')" id="4670510278_selldiv" >25 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4670510278_inputdiv" >
+				                    <input class="quicklist" id="4670510278_input" value="" placeholder="25" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4670510278')" id="4670510278_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="?" usedBy="Engineer" name=" Ancient Eldritch Smokey Sombrero" id="4649759767_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/105_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/hwn2015_western_hat.e69c7e985550f6bb19c9d920f32597afb6743e4e.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4649759767_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4649759767', '51')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4649759767', '51')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/4585450093">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 51  keys">51</li>
+							        <li class="small" style="background:orange" title="Used by: Engineer">Engineer</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Ancient Eldritch</p>
+								<p>Smokey Sombrero</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4649759767')" id="4649759767_selldiv" >30 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4649759767_inputdiv" >
+				                    <input class="quicklist" id="4649759767_input" value="" placeholder="30" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4649759767')" id="4649759767_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="?" usedBy="Demoman" name=" Abduction Universal Translator" id="4553611503_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/91_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/invasion_universal_translator.33074a3658a0a914d9df013e8fea2434ca70a3c7.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4553611503_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4553611503', '31')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4553611503', '31')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/4329449370">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 21  keys">21</li>
+							        <li class="small" style="background:orange" title="Used by: Demoman">Demoman</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Abduction</p>
+								<p>Universal Translator</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4553611503')" id="4553611503_selldiv" >32 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4553611503_inputdiv" >
+				                    <input class="quicklist" id="4553611503_input" value="" placeholder="32" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4553611503')" id="4553611503_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="69" usedBy="Demoman" name=" Morning Glory Buccaneer's Bicorne" id="4670159117_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/89_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/mightypirate.2ad51ddcb69e8f916eeb2a6c5021c76d96d6066b.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4670159117_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4670159117', '63')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4670159117', '63')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3276908655">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 41  keys">41</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 69 keys">69</li>
+							        <li class="small" style="background:orange" title="Used by: Demoman">Demoman</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Morning Glory</p>
+								<p>Buccaneer's Bicorne</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4670159117')" id="4670159117_selldiv" >40 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4670159117_inputdiv" >
+				                    <input class="quicklist" id="4670159117_input" value="" placeholder="40" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4670159117')" id="4670159117_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="13" usedBy="Demoman" name=" Steaming Stormin' Norman" id="4558519795_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/36_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/jul13_stormn_normn.149ee01f60f7f4f8ac2671e8fe592847705809c4.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4558519795_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4558519795', '47')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4558519795', '47')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/2112087527">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 15  keys">15</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 13 keys">13</li>
+							        <li class="small" style="background:orange" title="Used by: Demoman">Demoman</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Steaming</p>
+								<p>Stormin' Norman</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4558519795')" id="4558519795_selldiv" >42 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4558519795_inputdiv" >
+				                    <input class="quicklist" id="4558519795_input" value="" placeholder="42" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4558519795')" id="4558519795_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="?" usedBy="Engineer" name=" Nether Trail Smokey Sombrero" id="4381423412_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/104_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/hwn2015_western_hat.e69c7e985550f6bb19c9d920f32597afb6743e4e.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4381423412_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4381423412', '1')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4381423412', '1')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/4257892797">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 56  keys">56</li>
+							        <li class="small" style="background:orange" title="Used by: Engineer">Engineer</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Nether Trail</p>
+								<p>Smokey Sombrero</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4381423412')" id="4381423412_selldiv" >48 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4381423412_inputdiv" >
+				                    <input class="quicklist" id="4381423412_input" value="" placeholder="48" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4381423412')" id="4381423412_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="104" usedBy="Medic" name=" Sunbeams Prussian Pickelhaube" id="4683720693_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/17_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/medic_helmet.4b6ea6ee4cd45561621a428ea9d86801455ff8dd.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4683720693_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4683720693', '58')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4683720693', '58')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/261086827">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 77  keys">77</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 104 keys">104</li>
+							        <li class="small" style="background:orange" title="Used by: Medic">Medic</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Sunbeams</p>
+								<p>Prussian Pickelhaube</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4683720693')" id="4683720693_selldiv" >50 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4683720693_inputdiv" >
+				                    <input class="quicklist" id="4683720693_input" value="" placeholder="50" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4683720693')" id="4683720693_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="19" usedBy="Medic" name=" Stormy Storm Prussian Pickelhaube" id="4616521044_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/29_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/medic_helmet.4b6ea6ee4cd45561621a428ea9d86801455ff8dd.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4616521044_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4616521044', '57')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4616521044', '57')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/729322703">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 22  keys">22</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 19 keys">19</li>
+							        <li class="small" style="background:orange" title="Used by: Medic">Medic</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Stormy Storm</p>
+								<p>Prussian Pickelhaube</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4616521044')" id="4616521044_selldiv" >50 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4616521044_inputdiv" >
+				                    <input class="quicklist" id="4616521044_input" value="" placeholder="50" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4616521044')" id="4616521044_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="?" usedBy="Demoman" name=" Stare From Beyond Bomber's Bucket Hat" id="4531600421_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/83_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/eotl_summerhat.9d51d1cbecf209ef130201a813e1e3a7ebe0f1f6.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4531600421_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4531600421', '15')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4531600421', '15')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/4315756929">History</a></li>
+							        <li class="small" style="background:orange" title="Used by: Demoman">Demoman</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Stare From Beyond</p>
+								<p>Bomber's Bucket Hat</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4531600421')" id="4531600421_selldiv" >50 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4531600421_inputdiv" >
+				                    <input class="quicklist" id="4531600421_input" value="" placeholder="50" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4531600421')" id="4531600421_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="89" usedBy="Engineer" name=" Sunbeams Virtual Reality Headset" id="4642080317_box" style="box-shadow: 0px 0px 14px green;background: linear-gradient(to right bottom,#e7fbea, #4be765, #b8f2c2);">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/17_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/fwk_engineer_cranial.3e625771983a94137ae1191df7714b62cb8164ef.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4642080317_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4642080317', '52')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4642080317', '52')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1576283205">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 90  keys">90</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 89 keys">89</li>
+							        <li class="small" style="background:orange" title="Used by: Engineer">Engineer</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Sunbeams</p>
+								<p>Virtual Reality Headset</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4642080317')" id="4642080317_selldiv" >50 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4642080317_inputdiv" >
+				                    <input class="quicklist" id="4642080317_input" value="" placeholder="50" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4642080317')" id="4642080317_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="59" usedBy="Multi" name=" Haunted Ghosts Noble Amassment of Hats" id="4653569238_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/8_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/hat_second_nr.5935e32c0f19fa0bc55ccb0bf2f2180e5808ac6f.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4653569238_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4653569238', '50')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4653569238', '50')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/4355923908">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 54  keys">54</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 59 keys">59</li>
+							        <li class="small" style="background:orange" title="Used by: Multi">Multi</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Haunted Ghosts</p>
+								<p>Noble Amassment of Hats</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4653569238')" id="4653569238_selldiv" >50 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4653569238_inputdiv" >
+				                    <input class="quicklist" id="4653569238_input" value="" placeholder="50" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4653569238')" id="4653569238_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="96" usedBy="Pyro" name=" Anti-Freeze Attendant" id="4481307466_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/69_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/attendant.62440cb63ca8afd089f34644dd74f389f551bd68.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4481307466_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4481307466', '5')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4481307466', '5')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1649597822">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 66  keys">66</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 96 keys">96</li>
+							        <li class="small" style="background:orange" title="Used by: Pyro">Pyro</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Anti-Freeze</p>
+								<p>Attendant</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4481307466')" id="4481307466_selldiv" >80 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4481307466_inputdiv" >
+				                    <input class="quicklist" id="4481307466_input" value="" placeholder="80" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4481307466')" id="4481307466_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="92" usedBy="Soldier" name=" Anti-Freeze Full Metal Drill Hat" id="4319710268_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/69_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/robo_soldier_fullmetaldrillhat.72e2f15e4f61317c570abe0bca1d3c206b855fd6.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4319710268_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4319710268', '9')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4319710268', '9')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1712079942">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 86  keys">86</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 92 keys">92</li>
+							        <li class="small" style="background:orange" title="Used by: Soldier">Soldier</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Anti-Freeze</p>
+								<p>Full Metal Drill Hat</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4319710268')" id="4319710268_selldiv" >81 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4319710268_inputdiv" >
+				                    <input class="quicklist" id="4319710268_input" value="" placeholder="81" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4319710268')" id="4319710268_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="62" usedBy="Multi" name=" Searing Plasma Hat With No Name" id="4504612072_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/15_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/fwk_cowboyhat.9f160f7ac74865b7da7277678484033e0fd33cae.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4504612072_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4504612072', '11')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4504612072', '11')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/921189631">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 41  keys">41</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 62 keys">62</li>
+							        <li class="small" style="background:orange" title="Used by: Multi">Multi</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Searing Plasma</p>
+								<p>Hat With No Name</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4504612072')" id="4504612072_selldiv" >90 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4504612072_inputdiv" >
+				                    <input class="quicklist" id="4504612072_input" value="" placeholder="90" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4504612072')" id="4504612072_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="114" usedBy="Multi" name=" Cloud 9 Galvanized Gibus" id="4668587513_box" style="box-shadow: 0px 0px 14px green;">
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/58_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/robo_all_gibus.3abb36f0f6cf2704518fa96649b75a76e2f2fb42.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4668587513_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4668587513', '48')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4668587513', '48')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/2202731451">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 103  keys">103</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 114 keys">114</li>
+							        <li class="small" style="background:orange" title="Used by: Multi">Multi</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Cloud 9</p>
+								<p>Galvanized Gibus</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4668587513')" id="4668587513_selldiv" >100 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4668587513_inputdiv" >
+				                    <input class="quicklist" id="4668587513_input" value="" placeholder="100" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4668587513')" id="4668587513_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="80" usedBy="Multi" name=" The Ooze Modest Metal Pile of Scrap" id="4462199765_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/84_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/robo_all_modest_pile.39ceecea08d057a6d86c265d92a733fa64a77cff.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4462199765_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4462199765', '3')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4462199765', '3')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/3128021196">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 185  keys">185</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 80 keys">80</li>
+							        <li class="small" style="background:orange" title="Used by: Multi">Multi</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>The Ooze</p>
+								<p>Modest Metal Pile of Scrap</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4462199765')" id="4462199765_selldiv" >120 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4462199765_inputdiv" >
+				                    <input class="quicklist" id="4462199765_input" value="" placeholder="120" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4462199765')" id="4462199765_button" >ok</button>
+								</div>
+						</div>
+						
+						<div class="ubox" price="77" usedBy="Multi" name=" Sulphurous Hat With No Name" id="4668961077_box" >
+						
+						    <a href="#">
+							<div class="uimg">
+							
+							    <img src="http://backpack.tf/images/440/particles/64_94x94.png" style="height:80px; width:80px; position:absolute">
+							
+							    <img src=http://media.steampowered.com/apps/440/icons/fwk_cowboyhat.9f160f7ac74865b7da7277678484033e0fd33cae.png style="height:80px; width:80px; position:relative; margin-top:10;">
+							</div>
+							</a>
+							
+							<div class="utagul">
+							    <ul class="small">
+									<li class="small" id="4668961077_bumper" style="background:#2343e1; color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="bumpTheTrade('4668961077', '64')">BUMP</li>
+							        <li class="small" style="background:#fb0000;color: white; padding-left:7px; padding-right:7px; cursor:pointer" onclick="removeTheTrade('4668961077', '64')">CLOSE</li>
+							        <li class="small" style="background: white"><a target="_blank" href="http://backpack.tf/item/1675553548">History</a></li>
+							        <li class="small" style="background:#b0e0e6" title="suggested price - 87  keys">87</li>
+							        <li class="small" style="background:#bb5cfd" title="generated price - 77 keys">77</li>
+							        <li class="small" style="background:orange" title="Used by: Multi">Multi</li></ul>
+							</div>
+							
+							<div class="utxt" style="clear:left">
+							    <p>Sulphurous</p>
+								<p>Hat With No Name</p>
+							</div>
+								
+								<div class="uboxpricetag" style="cursor:pointer" onclick="givePriceInput('4668961077')" id="4668961077_selldiv" >500 KEYS</div>
+		
+		                        <div class="uboxpricetag" style="display:none;" id="4668961077_inputdiv" >
+				                    <input class="quicklist" id="4668961077_input" value="" placeholder="500" type="number" min="0" max="2000" />
+				                    <button class="ok" onclick="updateTheTrade('76561198042938501a', '4668961077')" id="4668961077_button" >ok</button>
+								</div>
+						</div>
+						</div>
+<script>
+$("document").ready(function() 
+{
+	$('#trbtn').click(function()
+	{
+        var link = $('#trinp').val();
+		var id = $('#trbtn').attr('steamid');
+		var act = 'update_tradeurl';
+		
+		if(link != 0)
+		{
+			$.post("http://quick.test/updateBD.php",
+			{
+				steamid: id,
+				trade_url: link,
+				action: act
+			},
+			function(data) 
+			{
+				if(data == "Success")
+			    {
+				    $('#trinp').attr('placeholder', link);
+					$('#trinp').val('');
+			    }
+			    else 
+			    {
+				    $('#overall-text').html(data);
+                    $('#overall').fadeIn('slow', function () 
+					{
+                    $(this).delay(5000).fadeOut('slow');
+                    });
+				}
+			});
+        }
+    });
+	
+	$('#overall').click(function()
+	{
+		$(this).hide();
+	});
+	
+});	
+</script>
+
+
+</div>
+</div>
+</div>
+
+<div id="footer">
+    <p><a style="color: white" href="http://steampowered.com" target="_blank">Powered by Steam</a></p>
+	<p>  Particle effect images, item histories and community prices are provided by <a style="color: white" href="http://backpack.tf/developer" target="_blank">Backpack.tf</a></p>
+</div>
+</div>
+
+
+</body>
+</html>
